@@ -183,3 +183,38 @@ section{
 .about{
   background: var(--second-color);
 }
+
+.about img {
+  margin-left: 80rem;
+  margin-top: 8rem;
+}
+
+.Aboutus h3 {
+  position: relative;
+  display: flex;
+  color: var(--color-main);
+  font-weight: 1000;
+  font-size: larger;
+  top: 19rem;
+  margin-left: 5rem;
+}
+
+.Aboutus span {
+  position: relative;
+  display: flex;
+  color: var(--text-color);
+  width: 60rem;
+  top: 20rem;
+  left: 5rem;
+  flex: auto;
+}
+
+
+::-webkit-scrollbar{
+  background: var(--bg-color);
+  width: 2px
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-main);
+}
