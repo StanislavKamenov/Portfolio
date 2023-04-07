@@ -21,7 +21,7 @@ body {
   background: var(--bg-color);
 }
 
-
+/* LOADER */
 .loader {
   position: fixed;
   top: 0;
@@ -62,7 +62,7 @@ body {
 section{
   min-height: 100vh;
 }
-
+/* Home */
 .navbar{
   position: fixed;
   left: 35rem;
@@ -115,6 +115,10 @@ section{
 .multiple-text {
   color: red;
 }
+
+
+
+
 
 /* .social-media{
   margin-left: 10rem;
@@ -179,14 +183,14 @@ section{
   }
 
 }
-
+/* ABOUT */
 .about{
   background: var(--second-color);
 }
 
 .about img {
   margin-left: 80rem;
-  margin-top: 8rem;
+  margin-top: 2rem;
 }
 
 .Aboutus h3 {
@@ -195,7 +199,7 @@ section{
   color: var(--color-main);
   font-weight: 1000;
   font-size: larger;
-  top: 19rem;
+  top: 28rem;
   margin-left: 5rem;
 }
 
@@ -204,12 +208,63 @@ section{
   display: flex;
   color: var(--text-color);
   width: 60rem;
-  top: 20rem;
+  top: 28rem;
   left: 5rem;
   flex: auto;
 }
 
+.card {
+  width: 400px;
+  background: var(--color-main);
+  margin-left: 80rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+}
 
+.header2 {
+  background: var(--bg-color);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.body {
+  padding: 20px;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.skill-name {
+  width: 120px;
+  font-size: 16px;
+}
+
+.skill-level {
+  width: 160px;
+  height: 10px;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left: 20px;
+}
+
+.skill-percent {
+  background-color: #333;
+  height: 100%;
+}
+
+.skill-percent-number {
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+/* Custom Scroll */
 ::-webkit-scrollbar{
   background: var(--bg-color);
   width: 2px
@@ -217,4 +272,86 @@ section{
 
 ::-webkit-scrollbar-thumb {
   background: var(--color-main);
+}
+
+/* Projects */
+
+.Projects {
+  display: flex;
+  position: relative;
+  color: var(--text-color);
+}
+
+/* .Projects h1 {
+  position: relative;
+  margin-left: 41rem;
+  top: 13rem;
+} */
+
+.flip-card {
+  background-color: transparent;
+  width: 190px;
+  height: 254px;
+  perspective: 1000px;
+  margin-left: 52rem;
+  margin-top: 20rem;
+  font-family: sans-serif;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 1rem;
+}
+
+.flip-card-front {
+  background: linear-gradient(120deg, rgb(0, 225, 255) 60%, rgb(0, 176, 230) 88%,
+     rgb(255, 211, 195) 40%, rgba(0, 183, 255, 0.603) 48%);
+  color: white;
+}
+
+.flip-card-back {
+  background: linear-gradient(120deg, rgb(4, 141, 253) 30%, rgb(0, 110, 255) 88%,
+     bisque 40%, rgb(0, 195, 255) 78%);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+/* Contact */
+.contactus {
+  background: var(--second-color);
+}
+
+/* Skills */
+
+.skills {
+  background: var(--second-color);
 }
