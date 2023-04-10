@@ -24,7 +24,10 @@ ScrollReveal ({
   delay: 200
 });
 
-ScrollReveal().reveal('.information, .about, .contactus', {origin: 'top'})
+ScrollReveal().reveal('.information, .Aboutus, .contactus', {origin: 'left'})
+ScrollReveal().reveal('.image, .about-img, .card, .Projects', {origin: 'left'})
+
+
 
 
 

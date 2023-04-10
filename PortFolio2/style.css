@@ -547,9 +547,10 @@ body, button, input {
   margin: 0 5px;
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 1700px) {
   .screen-body {
     flex-direction: column;
+    padding: 40px;
   }
 
   .screen-body-item.left {
@@ -564,18 +565,19 @@ body, button, input {
     margin-right: 12px;
   }
 
+  .screen-body-item {
+    padding: 0;
+  }
   .app-title:after {
     display: none;
   }
+
+
 }
 
-@media screen and (max-width: 600px) {
-  .screen-body {
-    padding: 40px;
-  }
-
-  .screen-body-item {
-    padding: 0;
+@media screen and (min-width: 840px) {
+  img {
+    width: 30rem;
   }
 }
 
