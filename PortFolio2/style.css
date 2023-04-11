@@ -547,7 +547,7 @@ body, button, input {
   margin: 0 5px;
 }
 
-@media screen and (max-width: 1700px) {
+@media screen and (max-width: 991px) {
   .screen-body {
     flex-direction: column;
     padding: 40px;
@@ -572,13 +572,19 @@ body, button, input {
     display: none;
   }
 
+  section {
+    display: block;
+  }
+
+.image {
+  position: relative;
+  padding: 3rem 5% 2rem;
+}
 
 }
 
-@media screen and (min-width: 840px) {
-  img {
-    width: 30rem;
-  }
+.footer {
+  color: var(--text-color);
 }
 
 
@@ -587,3 +593,4 @@ body, button, input {
 .skills {
   background: var(--second-color);
 }
+
