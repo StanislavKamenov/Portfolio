@@ -547,44 +547,56 @@ body, button, input {
   margin: 0 5px;
 }
 
-@media screen and (max-width: 991px) {
-  .screen-body {
-    flex-direction: column;
-    padding: 40px;
+/* For screens up to 768px */
+@media (max-width: 768px) {
+  .navbar {
+    left: 1rem;
+    padding: 2rem 2rem;
   }
-
-  .screen-body-item.left {
-    margin-bottom: 30px;
+  .logo {
+    left: 2rem;
   }
-
-  .app-title {
-    flex-direction: row;
+  .information {
+    margin-top: 8rem;
+    margin-left: 2rem;
   }
-
-  .app-title span {
-    margin-right: 12px;
+  .image {
+    margin-left: 2rem;
   }
-
-  .screen-body-item {
-    padding: 0;
+  .Aboutus h3 {
+    top: 20rem;
+    margin-left: 2rem;
   }
-  .app-title:after {
-    display: none;
+  .Aboutus span {
+    top: 20rem;
+    left: 2rem;
+    width: 80%;
   }
-
-  section {
-    display: block;
+  .card {
+    width: 100%;
+    margin-left: 2rem;
   }
-
-.image {
-  position: relative;
-  padding: 3rem 5% 2rem;
 }
 
+/* For screens up to 1024px */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 2rem 10%;
+  }
 }
 
-.footer {
-  color: var(--text-color);
+/* For screens up to 1200px */
+@media (max-width: 1200px) {
+  .navbar {
+    padding: 2rem 20%;
+  }
+}
+
+/* For screens larger than 1200px */
+@media (min-width: 1200px) {
+  .navbar {
+    padding: 2rem 40%;
+  }
 }
 
 
