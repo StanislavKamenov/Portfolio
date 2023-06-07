@@ -21,6 +21,11 @@ body {
   background: var(--bg-color);
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 /* LOADER */
 .loader {
   position: fixed;
@@ -168,8 +173,10 @@ section{
   position: relative;
   margin-top: -10rem;
   margin-left: 80rem;
-  animation: 4s skew ease-in-out infinite;
+  animation: 4s skew ease-in-out infinite; 
 }
+
+
 
 @keyframes skew{
   0%{
@@ -547,17 +554,74 @@ body, button, input {
   margin: 0 5px;
 }
 
-/* For screens up to 768px */
+@media (max-width: 1200px) {
+  .navbar {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background: var(--second-color);
+    border-top: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+  }
+  .navbar a {
+    display: block;
+    margin: 2rem 0;
+  }
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background: var(--second-color);
+    border-top: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+  }
+  .navbar a {
+    display: block;
+    margin: 3rem 0;
+  }
+  .header {
+    padding: 2rem 3%;
+  }
+  .section {
+    padding: 10rem 3% 2rem;
+  }
+  .footer{
+    padding: 2rem 3%;
+  }
+}
+
+
 @media (max-width: 768px) {
   .navbar {
-    left: 1rem;
-    padding: 2rem 2rem;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background: var(--second-color);
+    border-top: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+  }
+  .navbar a {
+    display: block;
+    margin: 3rem 0;
+  }
+  .image {
+    margin-left: 2rem;
+    margin-top: 11rem;
   }
   .logo {
     left: 2rem;
   }
   .information {
-    margin-top: 8rem;
+    margin-top: 20rem;
     margin-left: 2rem;
   }
   .image {
@@ -576,29 +640,13 @@ body, button, input {
     width: 100%;
     margin-left: 2rem;
   }
-}
-
-/* For screens up to 1024px */
-@media (max-width: 1024px) {
-  .navbar {
-    padding: 2rem 10%;
+  .flip-card {
+    margin-left: 8.5rem;
+  }
+  .social-media  {
+    margin-left: 1rem
   }
 }
-
-/* For screens up to 1200px */
-@media (max-width: 1200px) {
-  .navbar {
-    padding: 2rem 20%;
-  }
-}
-
-/* For screens larger than 1200px */
-@media (min-width: 1200px) {
-  .navbar {
-    padding: 2rem 40%;
-  }
-}
-
 
 /* Skills */
 
