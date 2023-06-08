@@ -599,6 +599,40 @@ body, button, input {
 }
 
 
+@media (max-width: 1280px) {
+  .navbar {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background: var(--second-color);
+    border-top: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+  }
+
+  .flip-card {
+    margin-left: 33rem;
+  }
+  .image {
+    margin-left: 50rem;
+  }
+  .card {
+    margin-left: 10rem;
+  }
+  .Aboutus span{
+    top: 10rem;
+    margin-left: 2rem;
+  }
+  .Aboutus h3 {
+    top: 9.5rem;
+    margin-left: 7rem;
+  }
+  .aboutimg {
+    margin-right: rem;
+  }
+}
+
+
 @media (max-width: 768px) {
   .navbar {
     position: absolute;
