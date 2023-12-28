@@ -4,9 +4,9 @@ Frontend Developer Portfolio html,css,js
 
 <h1>Sections</h1>
 
-About
-Project
-Contact Us
+<h4>About</h4>
+<h4>Project</h4>
+<h4>Contact Us</h4>
 
 <h1>Show your support</h1>
 
